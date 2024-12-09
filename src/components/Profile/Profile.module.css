@@ -1,0 +1,59 @@
+.profilebox {
+	border: 3px solid black;
+	border-radius: 10px;
+	max-width: 540px;
+	margin: 0 auto;
+	margin-top: 10px;
+}
+
+.main {
+	text-align: center;
+	font-size: 26px;
+	color: gray;
+	padding: 10px;
+	line-height: 1.2;
+}
+
+.ava {
+	max-width: 50%;
+	background-color: rgba(0, 0, 0, 0.842);
+	border-radius: 50%;
+}
+
+.username {
+	font-weight: var(--bold);
+	color: black;
+	line-height: 2;
+}
+
+.stats {
+	display: flex;
+	justify-content: space-between;
+}
+
+.stats_item {
+	height: 100px;
+	width: calc(540px / 3 + 2px);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 10px;
+	background-color: darkgray;
+	border-top: 2px solid gray;
+	font-size: 28px;
+
+	&:first-child {
+		border-right: 2px solid gray;
+			border-radius: 0 0 0 10px;
+	}
+
+	&:last-child {
+		border-left: 2px solid gray;
+		border-radius: 0 0 10px 0;
+	}
+	
+	& span:last-child {
+		font-weight: var(--bold);
+	}
+}
