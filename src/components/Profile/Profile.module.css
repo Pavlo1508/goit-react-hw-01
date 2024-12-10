@@ -1,9 +1,10 @@
 .profilebox {
 	border: 3px solid black;
 	border-radius: 10px;
-	max-width: 540px;
+	width: 540px;
 	margin: 0 auto;
 	margin-top: 10px;
+	margin-bottom: 50px;
 }
 
 .main {
@@ -15,7 +16,7 @@
 }
 
 .ava {
-	max-width: 50%;
+	width: 50%;
 	background-color: rgba(0, 0, 0, 0.842);
 	border-radius: 50%;
 }

@@ -1,13 +1,18 @@
-.green {
-	color: green;
-	font-size: 16px;
-}
+.friendList {
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+	width: 540px;
+	margin: 0 auto;
+	margin-bottom: 50px;
 
-.red {
-	color: red;
-	font-size: 16px;
-}
-
-.name, .ava {
-	margin-bottom: 5px;
+	& .friendListItem {
+		border: 2px solid black;
+		border-radius: 10px;
+		padding: 10px;
+		font-size: 20px;
+		font-weight: var(--semiBold);
+		text-align: center;
+		width: calc(540px / 5);
+	}
 }

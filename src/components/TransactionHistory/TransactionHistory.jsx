@@ -1,14 +1,28 @@
 import TransactionHistoryStyles from './TransactionHistory.module.css';
 
-const TransactionHistory = ({ type, amount, currency }) => {
+const TransactionHistory = ({ transactions }) => {
   return (
-    <>
-      <tr className={TransactionHistoryStyles.row}>
-        <td>{type.charAt(0).toUpperCase() + type.slice(1)}</td>
-        <td>{amount}</td>
-        <td>{currency}</td>
-      </tr>
-    </>
+    <table className={TransactionHistoryStyles.transactionTable}>
+      <thead>
+        <tr>
+          <th>Type</th>
+          <th>Amount</th>
+          <th>Currency</th>
+        </tr>
+      </thead>
+
+      <tbody>
+        {transactions.map((transaction) => (
+          <tr key={transaction.id}>
+            <td>
+              {transaction.type.charAt(0).toUpperCase() + transaction.type.slice(1)}
+            </td>
+            <td>{transaction.amount}</td>
+            <td>{transaction.currency}</td>
+          </tr>
+        ))}
+      </tbody>
+    </table>
   );
 };
 
