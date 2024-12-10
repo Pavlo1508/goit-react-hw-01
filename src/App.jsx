@@ -10,17 +10,11 @@ import transactions from './assets/transactionHistory.json'
 const App = () => {
   return (
     <>
-      <div className="profileMainBox">
-        {profileData.map((user) => (
-          <div key={user.id}>
-            <Profile {...user} />
-          </div>
-        ))}
-      </div>
+      <Profile {...profileData} />
       {/* ======================= */}
       <FriendsList friends={friends} />
-			{/* ======================= */}
-			<TransactionHistory transactions={transactions} />
+      {/* ======================= */}
+      <TransactionHistory transactions={transactions} />
     </>
   );
 };

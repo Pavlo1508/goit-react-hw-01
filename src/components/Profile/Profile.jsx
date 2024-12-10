@@ -1,5 +1,4 @@
 import ProfileStyles from "./Profile.module.css";
-// import clsx from "clsx";
 
 const User = ({ username, tag, location, avatar, stats }) => {
   return (
